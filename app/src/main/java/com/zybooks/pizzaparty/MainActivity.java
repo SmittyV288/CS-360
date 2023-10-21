@@ -29,9 +29,19 @@ public class MainActivity extends AppCompatActivity {
         int numAttend = Integer.parseInt(numAttendStr);
 
         // Determine how many slices on average each person will eat
+        int slicesPerPerson = 0;
+        int checkId = mHowHungryRadioGroup.getCheckedRadioButtonId();
 
+        if (checkId == R.id.light_radio_button) {
+            slicesPerPerson = 2;
+        }
+        else if (checkId == R.id.medium_radio_button){
+            slicesPerPerson = 3;
+        }
+        else if (checkId == R.id.ravenous_radio_button){
+            slicesPerPerson = 4;
+        }
 
-        int slicesPerPerson = 4;
         int totalPizzas = (int) Math.ceil(numAttend * slicesPerPerson /
                 (double) SLICES_PER_PIZZA);
         mNumPizzasTextView.setText("Total pizzas: " + totalPizzas);
