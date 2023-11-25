@@ -5,6 +5,7 @@ import android.app.Activity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -22,6 +23,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.cs360.inventoryappbymattsmith.MainActivity;
 import com.cs360.inventoryappbymattsmith.R;
 import com.cs360.inventoryappbymattsmith.ui.login.LoginViewModel;
 import com.cs360.inventoryappbymattsmith.ui.login.LoginViewModelFactory;
@@ -128,6 +130,11 @@ public class LoginActivity extends AppCompatActivity {
         String welcome = getString(R.string.welcome) + model.getDisplayName();
         // TODO : initiate successful logged in experience
         Toast.makeText(getApplicationContext(), welcome, Toast.LENGTH_LONG).show();
+
+        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+        startActivity(intent);
+
+        finish();
     }
 
     private void showLoginFailed(@StringRes Integer errorString) {
