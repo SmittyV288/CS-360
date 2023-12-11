@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Matt Smiths Inventory App CS360</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="Login">Login</string>
+    <string name="Register">Register</string>
+    <string name="registerEmail">Registration Email</string>
+    <string name="newPassword">New Password</string>
+    <string name="smsNotifications">SMS Notifications?</string>
+    <string name="addItem">Add Item</string>
+    <string name="productId">Product ID</string>
+    <string name="productDescription">Product Description</string>
+    <string name="quantity">Quantity</string>
+    <string name="addUpdate">Add/Update Item</string>
+    <string name="delete">Delete</string>
+    <string name="registerPhone">Phone Number</string>
+</resources>
