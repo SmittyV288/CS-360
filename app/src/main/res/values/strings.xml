@@ -1,12 +1,17 @@
 <resources>
-    <string name="app_name">Inventory App By Matt Smith</string>
-    <!-- Strings related to login -->
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome "</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
+    <string name="app_name">Matt Smiths Inventory App CS360</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="Login">Login</string>
+    <string name="Register">Register</string>
+    <string name="registerEmail">Registration Email</string>
+    <string name="newPassword">New Password</string>
+    <string name="smsNotifications">SMS Notifications?</string>
+    <string name="addItem">Add Item</string>
+    <string name="productId">Product ID</string>
+    <string name="productDescription">Product Description</string>
+    <string name="quantity">Quantity</string>
+    <string name="addUpdate">Add/Update Item</string>
+    <string name="delete">Delete</string>
+    <string name="registerPhone">Phone Number</string>
 </resources>
