@@ -23,8 +23,8 @@ public class ProductEditActivity extends AppCompatActivity {
         db = new DatabaseHelper(this);
 
         editTextProductId = findViewById(R.id.editProductId);
-        editTextProductDesc = findViewById(R.id.editProductDescription); // Make sure this ID matches your layout
-        editTextProductQuantity = findViewById(R.id.editQuantity); // Make sure this ID matches your layout
+        editTextProductDesc = findViewById(R.id.editProductDescription);
+        editTextProductQuantity = findViewById(R.id.editQuantity);
 
 
         Button btnSave = findViewById(R.id.btnUpdateItem);

@@ -155,7 +155,7 @@ public class InventoryActivity extends AppCompatActivity implements ProductAdapt
     private void sendLowInventorySms(Product product) {
         // Only attempt to send an SMS if the switch is on
         if (smsSwitch.isChecked()) {
-            String phoneNumber = "1234567890"; // Replace with an appropriate number
+            String phoneNumber = "1234567890"; //
             String message = "Low inventory alert for " + product.getProductDesc() + "! Only " + product.getQuantity() + " left in stock.";
 
             if (ContextCompat.checkSelfPermission(this, Manifest.permission.SEND_SMS) != PackageManager.PERMISSION_GRANTED) {
